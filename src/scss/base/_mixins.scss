@@ -1,0 +1,23 @@
+@mixin telefono{
+    @media (min-width: $telefono){
+        @content; // hacia donde viene todo el contendio que escriba entre llaves en el mixin
+    }
+}
+
+@mixin tablet{
+    @media (min-width: $tablet){
+        @content; // hacia donde viene todo el contendio que escriba entre llaves en el mixin
+    }
+}
+
+@mixin desktop{
+    @media (min-width: $desktop){
+        @content; // hacia donde viene todo el contendio que escriba entre llaves en el mixin
+    }
+}
+
+@mixin grid($columnas, $espaciado){
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+}
